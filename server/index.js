@@ -49,7 +49,7 @@ const sendEmail = async (to, subject, text, email) => {
 };
 
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log(''))
+    .then(() => console.log('database connected'))
     .catch((err) => console.error('ni hua', err))
 
 app.post('/signup', async (req, res) => {
